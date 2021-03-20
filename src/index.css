@@ -1,13 +1,152 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+    --primary: #31708E !important;
+    --secondary: #5085A5 !important;
+    --tertiary: #8FC1E3 !important;
+    --light: #F7F9FB !important;
+    --accent: #687864 !important;
+    --dark: #17252A !important;
+    --error: rgb(185, 41, 5);
+    --spacing-one: calc(1rem * 0.5);
+    --spacing-two: calc(1rem);
+    --spacing-five: calc(2.5rem);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+    box-sizing: border-box;
 }
+
+html,
+body,
+#root {
+    min-height: 100%;
+    height: 100%;
+    background-color: var(--light);
+}
+
+main {
+    height: 100%;
+	margin: 0 auto;
+	max-width: 90%;
+    padding: 50px 30px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-weight: 600;
+    line-height: 1.5;
+    font-size: 30px;
+    letter-spacing: .1em;
+    color: var(--light);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/** BEGIN HEADER **/
+header nav {
+    background-color: var(--accent);
+}
+
+header svg {
+    color: var(--light);
+    animation: spin 2.5s linear infinite;
+    animation-play-state: paused; 
+}
+
+header svg:hover {
+    animation-play-state: running;
+}
+
+@keyframes spin {
+    100% {transform: rotate(1turn); }
+}
+/** END HEADER **/
+
+/** BEGIN ABOUT **/
+.vertical-center {
+    min-height: 80%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 80vh; /* These two lines are counted as one :-)       */
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.jumbotron h1 {
+    font-size: 8vw;
+    font-weight: 400;
+}
+
+.jumbotron h2 {
+    font-size: 2vw;
+    font-weight: 800;
+}
+
+.jumbo-1 {
+    color: var(--primary);
+}
+
+.jumbo-2 {
+    color: var(--secondary);
+}
+
+.jumbo-3 {
+    color: var(--tertiary);
+}
+
+.container {
+    padding: 0;
+    width: 100%;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@Navbar {
+  background: var(--primary);
+  margin: 0;
+  padding: 1rem;
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+}
+
+header li {
+    list-style: none;
+}
+
+header a {
+  color: var(--light);
+  padding: 0 1vw;
+}
+
+header a:hover {
+    text-decoration: none;
+    text-shadow: 0 0 1rem var(--secondary);
+}
+
+header h1 {
+    margin: 0;
+    padding: 0;
+} */
+
+
+/* END HEADER */
