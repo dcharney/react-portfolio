@@ -9,17 +9,17 @@ import { Col } from 'react-bootstrap';
 
 function Contact() {
     const [formState, setFormState] = useState({
-        name: '',
-        email: '',
-        message: ''
+        Name: '',
+        Email: '',
+        Message: '',
+        isValid: 'disabled'
     });
     const { name, email, message } = formState;
 
     const initValid = {
         nameState: '',
         emailState: '',
-        messageState: '',
-        submitState: 'disabled'
+        messageState: ''
     }
     const [ validation, setValidation ] = useState(initValid);
     
@@ -27,6 +27,9 @@ function Contact() {
 
     function handleSubmit(e) {
         e.preventDefault();
+        if (formState.isValid === 'disabled') {
+            setErrorMessage('Invalid form submission. Please check fields and try again.');
+        }
         console.log(formState);
     }
 
@@ -36,6 +39,7 @@ function Contact() {
                 const isValid = validateEmail(e.target.value);
                 if (!isValid) {
                     setValidation({...validation, emailState: 'is-invalid'});
+                    setFormState({ ...formState, isValid: 'disabled' });
                 } else {
                     setValidation({...validation, emailState: 'is-valid'});
                 }
@@ -45,6 +49,7 @@ function Contact() {
                     setValidation({...validation, nameState: 'is-valid'});
                 } else {
                     setValidation({...validation, nameState: 'is-invalid'});
+                    setFormState({ ...formState, isValid: 'disabled' });
                 }
                 break;
             case 'Message':
@@ -52,6 +57,7 @@ function Contact() {
                     setValidation({...validation, messageState: 'is-valid'});
                 } else {
                     setValidation({...validation, messageState: 'is-invalid'});
+                    setFormState({ ...formState, isValid: 'disabled' });
                 }
                 break;
         }
@@ -60,28 +66,37 @@ function Contact() {
     function handleBlur(e) {
         switch (e.target.name) {
             case 'Email':
-                setValidation({...validation, emailState: ''})
+                if (validation.emailState === 'is-invalid') {
+                    setValidation({...validation, emailState: ''})
+                } 
                 break;
             case 'Name':
-                setValidation({...validation, nameState: ''})
+                if (validation.nameState === 'is-invalid') {
+                    setValidation({...validation, nameState: ''})
+                } 
                 break;
             case 'Message':
-                setValidation({...validation, messageState: ''})
+                if (validation.messageState === 'is-invalid') {
+                    setValidation({...validation, messageState: ''})
+                } 
                 break;
         }
-        
+
         if (!e.target.value.length) {
             setErrorMessage(`${e.target.name} is required.`);
         } else {
             setErrorMessage('');
         };
-        if (!errorMessage) {
-            setFormState({ ...formState, [e.target.name]: e.target.value });
-        };
+
+        if (validation.nameState === 'is-valid' && validation.emailState === 'is-valid' && validation.messageState === 'is-valid') {
+            setFormState({ ...formState, [e.target.name]: e.target.value, isValid: '' });
+        } else {
+            setFormState({ ...formState, isValid: 'disabled' });
+        }
     }
 
     return (
-        <Form id="contact">
+        <Form id="contact" onSubmit={handleSubmit}>
             <h1>Contact Me</h1>
             <Form.Group controlId="name" >
                 <Form.Label>Name</Form.Label>
@@ -95,6 +110,7 @@ function Contact() {
                         name="Name"
                         onChange={handleChange}
                         onBlur={handleBlur}
+                        onFocus={handleChange}
                     />
                     <Form.Control.Feedback type="invalid">
                         Minimum 3 characters.
@@ -113,6 +129,7 @@ function Contact() {
                         className={validation.emailState}
                         onChange={handleChange}
                         onBlur={handleBlur}
+                        onFocus={handleChange}
                         name="Email"
                     />
                     <Form.Control.Feedback type="invalid">
@@ -131,6 +148,7 @@ function Contact() {
                     required
                     onChange={handleChange}
                     onBlur={handleBlur}
+                    onFocus={handleChange}
                 />
                 <Form.Control.Feedback type="invalid">
                     Minimum 10 characters.
@@ -138,7 +156,7 @@ function Contact() {
             </Form.Group>
             <Form.Row>
                 <Col sm={3}>
-                    <Button id={validation.submitState} className={validation.submitState} type="submit">
+                    <Button id={formState.isValid} className={formState.isValid} type="submit">
                         Submit
                     </Button>
                 </Col>
