@@ -145,3 +145,9 @@ header h1 {
 
 
 /* END HEADER */
+
+.resume {
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+}
