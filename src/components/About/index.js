@@ -20,18 +20,13 @@ function About() {
                     alt="Me!"
                 />
                 <Media.Body>
-                    <h5>Media Heading</h5>
+                    <h5>About Me</h5>
                     <p>
-                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque
-                        ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at,
-                        tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate
-                        fringilla. Donec lacinia congue felis in faucibus.
+                        Technically minded and a creative thinker interested in pushing the envelope of engineering. Works well in high stress environments where required to problem solve with limited time and resources. 
                     </p>
 
                     <p>
-                        Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu
-                        leo. Cum sociis natoque penatibus et magnis dis parturient montes,
-                        nascetur ridiculus mus.
+                        Strong communication skills developed through managing high risk technical projects and facilitating cross discipline communication. Experience writing, executing, and witnessing tests for FAT, SAT, and other commissioning activities. Familiar with American and European design standards.
                     </p>
                 </Media.Body>
             </Media>

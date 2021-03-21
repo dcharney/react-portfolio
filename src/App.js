@@ -4,6 +4,7 @@ import About from './components/About';
 import Portfolio from './components/Portfolio';
 import Resume from './components/Resume';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
@@ -25,7 +26,7 @@ function App() {
     }
 
     return (
-        <div>
+        <>
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
             <Header
                 currentPage={currentPage}
@@ -34,7 +35,8 @@ function App() {
             <main>
                 { renderPage(currentPage) }
             </main>
-        </div>
+            <Footer />
+        </>
     );
 }
 
