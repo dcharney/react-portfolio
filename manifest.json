@@ -1,0 +1,31 @@
+{
+    "theme_color": "#F7F9FB",
+    "background_color": "#31708E",
+    "display": "standalone",
+    "start_url": "/",
+    "name": "react-portfolio",
+    "description": "Create React App Sample Portfolio",
+    "short_name": "Delaney's Portfolio",
+    "icons": [
+        {
+            "src": "/icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/icon-256x256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        },
+        {
+            "src": "/icon-384x384.png",
+            "sizes": "384x384",
+            "type": "image/png"
+        },
+        {
+            "src": "/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

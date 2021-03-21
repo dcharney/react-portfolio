@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.b261a5e1.chunk.css",
+    "main.js": "/react-portfolio/static/js/main.b6e4e067.chunk.js",
+    "main.js.map": "/react-portfolio/static/js/main.b6e4e067.chunk.js.map",
+    "runtime-main.js": "/react-portfolio/static/js/runtime-main.1c0f86cf.js",
+    "runtime-main.js.map": "/react-portfolio/static/js/runtime-main.1c0f86cf.js.map",
+    "static/css/2.4c97ca4f.chunk.css": "/react-portfolio/static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.cac829e3.chunk.js": "/react-portfolio/static/js/2.cac829e3.chunk.js",
+    "static/js/2.cac829e3.chunk.js.map": "/react-portfolio/static/js/2.cac829e3.chunk.js.map",
+    "static/js/3.f3ec1c75.chunk.js": "/react-portfolio/static/js/3.f3ec1c75.chunk.js",
+    "static/js/3.f3ec1c75.chunk.js.map": "/react-portfolio/static/js/3.f3ec1c75.chunk.js.map",
+    "index.html": "/react-portfolio/index.html",
+    "service-worker.js": "/react-portfolio/service-worker.js",
+    "service-worker.js.map": "/react-portfolio/service-worker.js.map",
+    "static/css/2.4c97ca4f.chunk.css.map": "/react-portfolio/static/css/2.4c97ca4f.chunk.css.map",
+    "static/css/main.b261a5e1.chunk.css.map": "/react-portfolio/static/css/main.b261a5e1.chunk.css.map",
+    "static/js/2.cac829e3.chunk.js.LICENSE.txt": "/react-portfolio/static/js/2.cac829e3.chunk.js.LICENSE.txt",
+    "static/media/budget-tracker.png": "/react-portfolio/static/media/budget-tracker.94bc45a2.png",
+    "static/media/delaneyCharney.ab091eee.pdf": "/react-portfolio/static/media/delaneyCharney.ab091eee.pdf",
+    "static/media/food-festival.png": "/react-portfolio/static/media/food-festival.06d0af41.png",
+    "static/media/note-taker.png": "/react-portfolio/static/media/note-taker.b977787a.png",
+    "static/media/photo-hut.png": "/react-portfolio/static/media/photo-hut.984d64aa.png",
+    "static/media/plan-your-date-night.png": "/react-portfolio/static/media/plan-your-date-night.44ef1f36.png",
+    "static/media/profile-pic.10d936f2.jfif": "/react-portfolio/static/media/profile-pic.10d936f2.jfif",
+    "static/media/weather-dashboard.png": "/react-portfolio/static/media/weather-dashboard.ca7cf5c5.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1c0f86cf.js",
+    "static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.cac829e3.chunk.js",
+    "static/css/main.b261a5e1.chunk.css",
+    "static/js/main.b6e4e067.chunk.js"
+  ]
+}
