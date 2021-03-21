@@ -3,13 +3,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBug } from '@fortawesome/free-solid-svg-icons';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
+import './style.css';
 
 
 function Header({ currentPage, setCurrentPage }) {
     const navLinks = ['About','Portfolio','Resume','Contact'];
 
-    useEffect(() => { document.title = currentPage;
-    console.log(currentPage) }, [currentPage]);
+    useEffect(() => { document.title = currentPage }, [currentPage]);
 
     return (
         <header>
@@ -22,7 +22,7 @@ function Header({ currentPage, setCurrentPage }) {
                 <Nav className="mr-auto">
                     { navLinks.map( link => (
                         <Nav.Link className={`${currentPage === link && 'navActive'}`} key={link}>
-                            <span onClick={() => { setCurrentPage(link) }} >{link}</span></Nav.Link>
+                            <span onClick={() => setCurrentPage(link)} >{link}</span></Nav.Link>
                     ))}
                 </Nav>
             </Navbar>

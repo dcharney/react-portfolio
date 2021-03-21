@@ -2,18 +2,16 @@ import React from 'react';
 import resumePdf from '../../assets/Resume/delaneyCharney.pdf';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { faDownload } from '@fortawesome/free-solid-svg-icons';
+import './style.css';
 
 
 function Resume() {
     return (
-        <section className="resume">
+        <section id="resume">
             {/* <a href={resumePdf} download>
                 <FontAwesomeIcon icon={ faDownload } size="lg" className="d-inline-block" />
             </a>  */}
-            {/* <Document file={resumePdf} >
-                <Page pageNumber={1} />
-            </Document> */}
-            <iframe src={resumePdf} allowfullscreen="" frameborder="0" height="100%" width="80%" title="Displaying My Resume" scrolling="auto"></iframe>
+            <iframe src={resumePdf} allow="fullscreen" frameBorder="0" height="100%" width="80%" title="Delaney Charney"></iframe>
         </section>
     );
 }

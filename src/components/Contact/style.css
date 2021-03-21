@@ -1,0 +1,33 @@
+/* #contact button {
+    border: solid 1px transparent;
+    background-color: var(--primary);
+    border: none;
+}
+
+#contact button:hover {
+    border: solid 0.5px var(--primary);
+    background-color: var(--secondary);
+    box-shadow: 0 0 10px var(--tertiary);
+}
+
+#contact .input-group, textarea {
+    border: solid 1px transparent;
+}
+
+#contact .input-group:hover, textarea:hover {
+    border: solid 1px var(--secondary);
+    box-shadow: 0 0 10px var(--secondary);
+} */
+
+/* #contact .disabled {
+    pointer-events: none !important;
+    cursor: default !important;
+    background-color: var(--error);
+} */
+#contact #disabled:hover {
+    cursor: default;
+}
+
+#contact #disabled:active {
+    box-shadow: none;
+}

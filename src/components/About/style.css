@@ -1,0 +1,35 @@
+/** BEGIN ABOUT **/
+.vertical-center {
+    min-height: 80%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 80vh; /* These two lines are counted as one :-)       */
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.jumbotron h1 {
+    font-size: 8vw;
+    font-weight: 400;
+}
+
+.jumbotron h2 {
+    font-size: 2vw;
+    font-weight: 800;
+}
+
+.jumbo-1 {
+    color: var(--primary);
+}
+
+.jumbo-2 {
+    color: var(--secondary);
+}
+
+.jumbo-3 {
+    color: var(--tertiary);
+}
+
+/** END ABOUT **/

@@ -2,6 +2,7 @@ import React from 'react';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import Media from 'react-bootstrap/Media';
 import profPic from '../../assets/About/profile-pic.jfif';
+import './style.css';
 
 function About() {
 

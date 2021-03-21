@@ -2,6 +2,7 @@ import React from 'react';
 import Card from 'react-bootstrap/Card';
 import CardColumns from 'react-bootstrap/CardColumns';
 import photoHutphoto from '../../assets/Portfolio/photo-hut.png';
+import './style.css';
 
 function Portfolio() {
     const projects = [
@@ -39,7 +40,7 @@ function Portfolio() {
     ]
 
     return (
-        <section>
+        <section id="portfolio">
             <h1>Portfolio</h1>
             <CardColumns>
                     { projects.map((project) => (
