@@ -1,13 +1,90 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+    --primary: #31708E !important;
+    --secondary: #5085A5 !important;
+    --tertiary: #8FC1E3 !important;
+    --light: #F7F9FB !important;
+    --accent: #687864 !important;
+    --dark: #17252A !important;
+    --error: rgb(185, 41, 5);
+    --spacing-one: calc(1rem * 0.5);
+    --spacing-two: calc(1rem);
+    --spacing-five: calc(2.5rem);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+    box-sizing: border-box;
 }
+
+html,
+body,
+#root {
+    min-height: 100%;
+    background-color: var(--light);
+}
+
+main {
+    min-height: 91.5vh;
+	margin: 0 auto;
+    margin-top: 30px;
+	max-width: 90%;
+    padding: 50px 30px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    line-height: 1.5;
+    font-size: 30px;
+    letter-spacing: .1em;
+    color: var(--light);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+
+
+/* a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@Navbar {
+  background: var(--primary);
+  margin: 0;
+  padding: 1rem;
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+}
+
+header li {
+    list-style: none;
+}
+
+header a {
+  color: var(--light);
+  padding: 0 1vw;
+}
+
+header a:hover {
+    text-decoration: none;
+    text-shadow: 0 0 1rem var(--secondary);
+}
+
+header h1 {
+    margin: 0;
+    padding: 0;
+} */
+
+
+/* END HEADER */
+

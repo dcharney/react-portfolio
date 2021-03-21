@@ -1,0 +1,31 @@
+/** BEGIN HEADER **/
+header {
+    position: fixed;
+    top:0;
+    width: 100%;
+    z-index: 999;
+}
+
+header nav {
+    background-color: var(--dark);
+}
+
+header svg {
+    color: var(--light);
+    animation: spin 2.5s linear infinite;
+    animation-play-state: paused; 
+}
+
+header svg:hover {
+    animation-play-state: running;
+}
+
+@keyframes spin {
+    100% {transform: rotate(1turn); }
+}
+
+.navActive {
+    color: whitesmoke !important;
+}
+
+/** END HEADER **/

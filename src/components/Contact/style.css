@@ -1,0 +1,27 @@
+#contact button {
+    border: solid 1px transparent;
+    background-color: var(--primary);
+    border: none;
+}
+
+#contact button:hover {
+    /* border: solid 0.5px var(--primary);
+    background-color: var(--secondary);
+    box-shadow: 0 0 10px var(--tertiary); */
+}
+
+#contact .input-group:hover, textarea:hover {
+    box-shadow: 0 0 10px var(--tertiary);
+}
+
+#contact #disabled:hover {
+    cursor: default;
+}
+
+#contact #disabled:active {
+    box-shadow: none !important;
+}
+
+#contact .error-text {
+    color: var(--error);
+}
