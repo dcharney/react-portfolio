@@ -60,6 +60,11 @@ header svg:hover {
 @keyframes spin {
     100% {transform: rotate(1turn); }
 }
+
+.navActive {
+    color: whitesmoke !important;
+}
+
 /** END HEADER **/
 
 /** BEGIN ABOUT **/
