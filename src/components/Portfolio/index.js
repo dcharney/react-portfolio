@@ -1,7 +1,7 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
 import CardColumns from 'react-bootstrap/CardColumns';
-import photoHutphoto from '../../assets/portfolio/photo-hut.png';
+import photoHutphoto from '../../assets/Portfolio/photo-hut.png';
 
 function Portfolio() {
     const projects = [
@@ -43,7 +43,7 @@ function Portfolio() {
             <h1>Portfolio</h1>
             <CardColumns>
                     { projects.map((project) => (
-                        <Card>
+                        <Card key={project.name}>
                             <Card.Img variant="top" src={photoHutphoto} />
                             <Card.Body>
                                 <Card.Title>{project.name}</Card.Title>
