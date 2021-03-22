@@ -14,7 +14,7 @@ function Header({ currentPage, setCurrentPage }) {
     return (
         <header>
             <Navbar variant="dark">
-                <Navbar.Brand href="/">
+                <Navbar.Brand href="/react-portfolio/">
                     <FontAwesomeIcon icon={faBug} size="lg"
                         className="d-inline-block"
                     />{' '}
