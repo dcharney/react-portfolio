@@ -1,6 +1,6 @@
 # Delaney Charney ![GitHub license](https://img.shields.io/badge/License-Unlicense-blue.svg)
 
-# Welcome!
+## Welcome!
 
 My portfolio can be viewed [here](https://dcharney.github.io/react-portfolio/). This is a sample portfolio that was built using CRA.
 
