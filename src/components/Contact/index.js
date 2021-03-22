@@ -60,6 +60,8 @@ function Contact() {
                     setFormState({ ...formState, isValid: 'disabled' });
                 }
                 break;
+            default:
+                break;
         }
     };
 
@@ -79,6 +81,8 @@ function Contact() {
                 if (validation.messageState === 'is-invalid') {
                     setValidation({...validation, messageState: ''})
                 } 
+                break;
+            default:
                 break;
         }
 
