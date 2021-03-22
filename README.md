@@ -26,4 +26,4 @@ My portfolio can be viewed [here](https://dcharney.github.io/react-portfolio/). 
 
 ## Author
 
-This application was written and developed by Delaney Charney for the week 19 challenge assingment of the UCF Coding Bootcamp. If you have any questions, open an issue or contact me directly at dcharney.dev@gmail.com. Check out the rest of my work on GitHub at [dcharney](https://github.com/dcharney).
+This application was written and developed by Delaney Charney for the week 20 challenge assingment of the UCF Coding Bootcamp. If you have any questions, open an issue or contact me directly at dcharney.dev@gmail.com. Check out the rest of my work on GitHub at [dcharney](https://github.com/dcharney).
