@@ -2,7 +2,7 @@
 
 # Welcome!
 
-My portfolio can be viewed [here](https://dcharney.github.io/react-portfolio/). This is a sample portfolio that was built use the cli cra.
+My portfolio can be viewed [here](https://dcharney.github.io/react-portfolio/). This is a sample portfolio that was built using CRA.
 
 ## Table of Contents
 - [Welcome](#welcome)
